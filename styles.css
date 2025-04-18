@@ -301,16 +301,18 @@ footer{
     padding: 50px 10px 10px;
   }
   .container {
-    
     flex-direction: column;
     height: auto;
     padding: 20px;
   }
-  .container .content .alt-content {
+  .container .content{
     transform: translateX(0px);
     max-width: 100%;
     margin-top: -20px;
     padding: 30px;
+  }
+  .container .alt-content{
+    max-width: 100%;
   }
   header {
     position: relative;
@@ -359,11 +361,22 @@ footer{
   }
   .title {
     position: relative;
-    margin-bottom: -50px;
+    margin-bottom: -40px;
     text-align: center;
+    font-size: 2rem;
   }  
   .cards{
+    max-width: 100%;
     margin-bottom: 20px;
+  }
+  #contato .contact-item{
+    max-width: fit-content;
+    font-size: 0.6rem;
+    transform: translate(0px);
+    padding: 20px;
+  }
+  footer{
+    font-size: 0.8rem;
   }
 }
 
@@ -383,6 +396,13 @@ footer{
   .icon li a {
     width: 35px;
     height: 35px;
+  }
+  #contato .container .contact-item{
+    justify-content: center;
+    align-items: center;
+  }
+  #contato .contact-item p{
+    width: fit-content;
   }
 }
 
