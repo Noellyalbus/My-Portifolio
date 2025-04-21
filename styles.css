@@ -313,14 +313,15 @@ footer{
     height: auto;
     padding: 20px;
   }
-  .container .content{
+  .container .content,
+  .container .alt-content{
     transform: translateX(0px);
     max-width: 100%;
     margin-top: -20px;
     padding: 30px;
   }
   .container .alt-content{
-    max-width: 100%;
+    margin-top: 10px;
   }
   header {
     position: relative;
@@ -375,7 +376,7 @@ footer{
   }  
   .cards{
     max-width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   #contato .alt-content {
     flex-direction: column;
@@ -407,13 +408,15 @@ footer{
 
 
 @media screen and (max-width: 600px) {
-  .container .content {
+  .container .content{
     margin-top: -30px;
   }
-  .content h2 {
+  .content h2,
+  .alt-content h2 {
     font-size: 2em;
   }
-  .content p {
+  .content p,
+  .alt-content p {
     font-size: 0.7em;
   }
   .imgBox img {
